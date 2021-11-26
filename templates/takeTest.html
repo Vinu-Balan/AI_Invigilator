@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <script>
+    function giveAlert() {
+    alert("Your test will be ende. You will be no longer able to change the answers.");
+    window.location = "/testEnded";
+    }
+</script>
+</head>
+<body style="margin:0%;padding:0%;">
+<div style="height:70px;background-color:#2878f1;width:100%;margin-bottom:5px;border-bottom:5px solid #f1ab28">
+    <div style="background-color:light-blue;width:100%;display:flex;flex-direction:row;width:100%;">
+    <h1 style="color:white;padding-left:30px;font-size:40px;padding-top:0;margin:10px;">Online Test Portal</h1>
+        <h4 style="padding-top:10px;padding-left:40px;color:white;">(Loading of the camera may take some time)</h4>
+</div>
+</div>
+    <div style="display:flex;flex-direction:row;width:100%;">
+        <div style="display:flex;flex-direction:column;">
+        <img src="{{url_for('test_video_feed')}}" style="width:100%">
+        <button width="100px" onclick="giveAlert()" style="padding:20px;margin:20px;margin-top:50px;background-color: #008CBA;color:white;border-radius:10px;" type="submit"><a style="text-decoration:None;color:white;">End Test</a></button>
+    </div>
+        <div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScB_XrfN0koTbCERztNM24K_RWokGpu8jh1f6ab95TJuNkN_Q/viewform?usp=sf_link" style="width: 900px; height: 480px;margin:0;"></iframe>
+    </div>
+    </div>
+</body>
+</html>

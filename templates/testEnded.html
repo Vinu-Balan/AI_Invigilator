@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI</title>
+</head>
+<body style="margin:0%;padding:0%;">
+<div style="height:70px;background-color:#2878f1;width:100%;margin-bottom:5px;border-bottom:5px solid #f1ab28">
+    <div style="background-color:light-blue;width:100%;display:flex;flex-direction:row;width:100%;">
+    <h1 style="color:white;padding-left:30px;font-size:40px;padding-top:0;margin:10px;">Online Test Portal</h1>
+</div>
+<div style="margin-top:5%">
+    <center><label style="font-size:40px;font-weight:800;" >Test Ended</label></center><br>
+    <center>
+        <div style="display:flex;flex-direction:column;background-color:#03bcff;width:50%;padding:30px;border-radius:30px;">
+            <center><label style="font-size:35px;color:#FFFF">Number of Warnings: {{data["warning"]}}</label></center>
+    {% if (data["warning"]>9) %}
+    <center><label style="font-size:35px;color:#FFFF">You are Considered as Malpractice!</label></center>
+    {% else %}
+    <center><label style="font-size:35px;color:#FFFF">You have Completed the Test Successfully!</label></center>
+    {% endif %}<br>
+        </div>
+    </center>
+
+    <center style="margin-top:30px;"><label style="font-size:45px;font-weight:800;">Thank You for Taking The Test</label></center>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+</head>
+<body style="margin:0%;padding:0%;">
+<div style="height:70px;background-color:#2878f1;width:100%;margin-bottom:5px;border-bottom:5px solid #f1ab28">
+    <div style="background-color:light-blue;width:100%;display:flex;flex-direction:row;width:100%;">
+    <h1 style="color:white;padding-left:30px;font-size:40px;padding-top:0;margin:10px;">Online Test Portal</h1>
+</div>
+    <center><h1>Please Check Your Sitting posture</h1></center>
+    <center><h4>(Loading of the camera may take some time)</h4></center>
+    <center><img src="{{url_for('adj_video_feed')}}" width="30%" height="30%" ></center>
+    <br>
+    <center><h3>Once you are in a comfortable position start the test</h3></center>
+    <center><button width="100px" style="padding:20px;margin:20px;margin-top:50px;background-color: #008CBA;color:white;border-radius:10px;" type="submit"><a style="text-decoration:None;color:white;" href="/precheck/test">Take Test</a></button></center>
+</body>
+</html>

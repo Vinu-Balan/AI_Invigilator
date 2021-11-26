@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+</head>
+<body style="margin:0%;padding:0%;">
+<div style="height:70px;background-color:#2878f1;width:100%;margin-bottom:5px;border-bottom:5px solid #f1ab28">
+    <div style="background-color:light-blue;width:100%;display:flex;flex-direction:row;width:100%;">
+    <h1 style="color:white;padding-left:30px;font-size:40px;padding-top:0;margin:10px;">Online Test Portal</h1>
+</div>
+</div>
+<div style="margin-bottom:5%;">
+    <center><h1>Enter the Student Details</h1></center>
+</div>
+<form method="POST">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="display:flex;flex-direction:row;width:70%;justify-content: center;justify-content: space-around;margin-bottom:40px;">
+            <label style="font-size:28px">Student Name:</label><input name="name" type="text" style="height:28px;width:300px;" placeholder="Enter the name" />
+        </div>
+        <div style="display:flex;flex-direction:row;width:70%;justify-content: center;justify-content: space-around;margin-bottom:40px;">
+            <label style="font-size:28px">Register No:</label><input name="reg_no" type="number" style="height:28px;width:300px;" placeholder="Enter the Register Number" />
+        </div>
+        <div style="display:flex;flex-direction:row;width:90%;justify-content: center;justify-content: space-around;margin-bottom:40px;">
+            <label style="font-size:28px">Department:</label><select name="depts" id="depts">
+            <option value="aids">AI & DS</option>
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="csbs">CSBS</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <center><button width="100px" style="padding:20px;margin:20px;margin-top:50px;background-color: #008CBA;color:white;border-radius:10px;" type="submit"><a style="text-decoration:None;color:white;" href="/precheck">Proceed</a></button></center>
+    </div>
+</form>
+
+</body>
+</html>
